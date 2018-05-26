@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
 
                     Log.d("Bitcoin", "JSON: " + response.toString());
-                    String price = response.getString("ask");
+                    String price = response.getString("last");
                     Log.d("Bitcoin", price);
                     mPriceTextView.setText(price);
 
